@@ -1,5 +1,5 @@
 export default function Sidebar(props) {
-    const noteElements = props.notes.map((note, index) => (
+    const noteElements = props.notes && props.notes.map((note, index) => (
         <div key={note.id}>
             <div
                 

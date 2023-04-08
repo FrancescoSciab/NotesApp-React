@@ -1,8 +1,9 @@
 import ReactMde from "react-mde" //--legacy-peer-deps
 import Showdown from "showdown" //to not forget //--legacy-peer-deps
+import { useState } from "react"
 
 export default function Editor({ currentNote, updateNote }) {
-    const [selectedTab, setSelectedTab] = React.useState("write")
+    const [selectedTab, setSelectedTab] = useState("write")
 
     const converter = new Showdown.Converter({
         tables: true,
