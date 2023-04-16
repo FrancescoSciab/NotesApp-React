@@ -16,8 +16,7 @@
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "18.2.0",
     "react-mde": "^11.5.0",
-    "react-split": "^2.0.14", 
+    "react-split": "^2.0.14",
     "showdown": "^2.1.0"
   }
 }
-
