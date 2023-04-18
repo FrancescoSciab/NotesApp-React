@@ -8,7 +8,7 @@ import {nanoid} from "nanoid"
 
 export default function App() {
     const [notes, setNotes] = useState(
-        JSON.parse(localStorage.getItem("notes")) || [])
+        () => JSON.parse(localStorage.getItem("notes")) || []) /* Lazily initialize our `notes` state so it doesn't reach into localStorage on every single re-render of the App component */
     const [currentNoteId, setCurrentNoteId] = useState(
         (notes[0] && notes[0].id) || ""
     )
